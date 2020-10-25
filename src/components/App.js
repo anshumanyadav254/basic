@@ -22,7 +22,7 @@ class App extends Component {
 				<button id="click" onClick={this.handleClick}>
 					Click Me
 				</button>
-				<p>Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
+				<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
     		</div>
     	);
     }
