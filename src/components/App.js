@@ -4,13 +4,13 @@ import '../styles/App.css';
 class App extends Component {
     constructor(props) {
 		super(props);
-		// this.state={
-		// 	para:"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
-		// }
+		this.state={
+			isShow:false
+		}
 		this.handleClick=this.handleClick.bind(this);
 	};
 	handleClick() {
-		return 	<p>Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
+		this.setState({isShow:true})
 
 		//console.log( "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy")
 	  }
@@ -18,11 +18,11 @@ class App extends Component {
     	return(
     		<div id="main">
 				{ /* Do not remove this main div!! */ }
-				
+		                {this.state.isShow?<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>}
+}
 				<button id="click" onClick={this.handleClick}>
 					Click Me
 				</button>
-				<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
     		</div>
     	);
     }
