@@ -18,7 +18,7 @@ class App extends Component {
     	return(
     		<div id="main">
 				{ /* Do not remove this main div!! */ }
-		                {this.state.isShow?<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>}
+		                {this.state.isShow ? (<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>):null}
 }
 				<button id="click" onClick={this.handleClick}>
 					Click Me
